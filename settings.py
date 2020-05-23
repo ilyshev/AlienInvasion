@@ -22,3 +22,14 @@ class Settings():
         self.fleet_drop_speed = 20
         #fleet_direction = 1 moving right, -1 moving left
         self.fleet_direction = 1
+
+        #Game tempo increasing
+        self.speedup_scale = 1.1
+        self.initialize_dynamic_settings()
+
+    def initialize_dynamic_settings(self):
+        self.ship_speed_factor = 1.5
+        self.bullet_speed_factor = 3.0
+        self.alien_speed_factor = 1.0
+
+        self.fleet_direction = 1
